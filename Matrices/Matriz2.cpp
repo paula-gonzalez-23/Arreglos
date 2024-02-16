@@ -5,7 +5,6 @@ int main(){
 
     int columnas = 0;
     int filas = 0;
-    int i,j;
 
     cout<<"Digite la cantidad de columnas que desea en su matriz: "<<endl; 
     cin>>columnas;
@@ -19,11 +18,23 @@ int main(){
     for (int i = 0; i < filas; i++){
         for (int j = 0; j < columnas; j++){
             
-            cout<<"Ingrese el nombre y precio del producto que desea agregar: "+j<<endl;
+            cout<<"Ingrese el nombre y precio del producto que desea agregar ["<<i<<"]["<<j<<"]: "<<endl;
             cin>>maquina[i][j];
 
-            cout<<maquina[filas][columnas]<<endl;
+            
         }
     }
+
+    cout<<"Matriz Resultante"<<endl;
+    
+    for (int i = 0; i < filas; i++){
+        for (int j = 0; j < columnas; j++){
+
+            cout<<maquina [i][j]<<" ";
+        }
+
+        cout<<endl;
+    }
+
 
 }
