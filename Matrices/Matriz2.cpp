@@ -18,9 +18,8 @@ int main(){
     for (int i = 0; i < filas; i++){
         for (int j = 0; j < columnas; j++){
             
-            cout<<"Ingrese el nombre y precio del producto que desea agregar ["<<i<<"]["<<j<<"]: "<<endl;
+            cout<<"Ingrese el nombre y precio del producto que desea agregar ["+i+"]["+j+"]: ";
             cin>>maquina[i][j];
-
             
         }
     }
